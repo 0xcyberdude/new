@@ -68,6 +68,9 @@ body {
     width: 560px;
     margin-bottom: 20px;
 }
+.main-heading span {
+	display: block;
+}
 .bold-text {
     font-family: "Poppins Semibold";
     font-size: 40px;
@@ -215,23 +218,30 @@ a {
 @media only screen and (max-width: 450px) {
 
     body {
-        display: grid;
         overflow: hidden;
         justify-content: center;
     }
 
     .header {
-        transform: scale(.6);
+		display: grid;
+		place-items: center;
         text-align: center;
         margin: 0;
     }
     .main-heading {
         margin-bottom: 30px;
     }
+    .bold-text {
+		font-size: 23px;
+    }
+    .thin-text {
+	   font-size: 19px;
+    }
     .main-text{
-        font-size: 19px;
-        line-height: 35px;
+        line-height: 20px;
+        width: 100vw;
     } 
+    
     .mySwiper {
         transform: scale(.7) translateX(-60px);
         overflow: visible;
